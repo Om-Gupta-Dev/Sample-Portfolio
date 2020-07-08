@@ -16,9 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path , include
 
-from PortApp import urls as PortUrl
+from PortApp import views as PortView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(PortUrl)),
+    path('', PortView.index ),
 ]
