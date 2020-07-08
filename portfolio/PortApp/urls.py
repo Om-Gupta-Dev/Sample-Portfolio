@@ -19,5 +19,10 @@ from django.urls import path , include
 from PortApp import views as PortView
 
 urlpatterns = [
-    path('', PortView.index ),
+    path('', PortView.home ),
+    path('about', PortView.about ),
+    path('services', PortView.services ),
+    path('fitness', PortView.fitness ),
+    path('blog', PortView.blog ),
+    path('contact', PortView.contact ),
 ]
