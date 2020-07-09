@@ -3,5 +3,12 @@
 {% block title %} Contact...  {% endblock title %}
 
 {% block body %}
-    {{ form.as_p }}
+    <div class="container text-light bold mt-5 my-5 text-center">
+        <h1 class="align-content-center"> GET IN TOUCH </h1><hr>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input class="btn btn-lg btn-outline-warning" type="submit" >
+        </form>
+    </div>
 {% endblock body %}
