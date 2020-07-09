@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from PortApp import forms
 
 # Create your views here.
 
@@ -18,4 +19,5 @@ def blog(request):
     return render(request , 'PortApp/blog.html')
 
 def contact(request):
-    return render(request , 'PortApp/contact.html')
+    form = forms.contact
+    return render(request , 'PortApp/contact.html' , {'form':form})
