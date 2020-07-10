@@ -8,8 +8,7 @@ class contact(models.Model):
     Last_name = models.CharField(max_length=15 )
     Username = models.CharField(max_length=30 )
     Email = models.EmailField()
-    Password = models.CharField(max_length=30 ) 
-    rPassword = models.CharField(max_length=30 )
+    Message = models.TextField() 
     
     def __str__(self):
         return self.Username
