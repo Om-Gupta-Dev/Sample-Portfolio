@@ -28,16 +28,15 @@ def contact(request):
     if request.method == "POST":
         form = PortForm.contact(request.POST)
         if form.is_valid():
-            if form.cleaned_data['Password'] == form.cleaned_data['rPassword']:
-                print("\n\n\t Validatin succeed \t Printing User Data......")
-                print('' , form.cleaned_data['First_Name'])
-                print('' , form.cleaned_data['Last_name'])
-                print('' , form.cleaned_data['Username'])
-                print('' , form.cleaned_data['Email'])
-                print('' , form.cleaned_data['Password'])
-                print('' , form.cleaned_data['rPassword'])
+            print("\n\n\t Validatin succeed \t Printing User Data......")
+            print('' , form.cleaned_data['First_Name'])
+            print('' , form.cleaned_data['Last_name'])
+            print('' , form.cleaned_data['Username'])
+            print('' , form.cleaned_data['Email'])
+            print('' , form.cleaned_data['Message'])
+            form.save(commit=True)
                     
-                return render(request , 'PortApp/thank.html' , {'form':form})
+            return render(request , 'PortApp/thank.html' , {'form':form})
             else:
                 raise ValidationError("Both Passwords Should Match..")
         else:
