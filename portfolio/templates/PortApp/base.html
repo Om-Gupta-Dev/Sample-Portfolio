@@ -13,12 +13,12 @@
 
     <title> {% block title %}  {% endblock title %} </title>
     </head>
-    <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-            <div class="container">
+    <body class={{ BodyClass }}>
+        <nav class="navbar navbar-nav fixed-top navbar-expand-lg navbar-{{ nav }} scrolling-navbar">
+            <div class="container-fluid px-5">
 
               <!-- Brand -->
-              <a class="navbar-brand text-white" href="/">
+              <a class="navbar-brand" href="/">
                 <strong>Om Gupta </strong>
               </a>
 
@@ -34,32 +34,32 @@
                 <!-- Right -->
                 <ul class="navbar-nav nav-flex-icons ml-auto">
                   <li class="nav-item">
-                    <a href="/" class="nav-link text-white" >
-                      Home
+                    <a href="/" class="nav-link white px-3 font-weight-bold active" >
+                      Home 
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/about" class="nav-link text-white" >
+                    <a href="/about" class="nav-link px-3 font-weight-bold active" >
                       About
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/services" class="nav-link text-white" >
+                    <a href="/services" class="nav-link px-3 font-weight-bold active" >
                       Services
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/fitness" class="nav-link text-white" >
+                    <a href="/fitness" class="nav-link px-3 font-weight-bold active" >
                       Fitness
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/blog" class="nav-link text-white" >
+                    <a href="/blog" class="nav-link px-3 font-weight-bold active" >
                       Blog
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/contact" class="nav-link text-white" >
+                    <a href="/contact" class="nav-link px-3 font-weight-bold active" >
                       Contact
                     </a>
                   </li>

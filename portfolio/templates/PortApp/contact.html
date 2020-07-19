@@ -3,12 +3,28 @@
 {% block title %} Contact...  {% endblock title %}
 
 {% block body %}
-    <div class="container text-light bold mt-5 my-5 text-center">
+    <div class="container text-dark bold mt-5 my-5 text-center">
         <h1 class="align-content-center"> GET IN TOUCH </h1><hr>
-        <form method="POST">
+        <form method="POST" class="form">
             {% csrf_token %}
-            {{ form.as_p }}
-            <button class="btn btn-lg btn-outline-warning px-5 rounded" type="submit" > Send.. <button>
+            <div class="container row">
+                <div class="container col-md-6">
+                    <label for="field">Name:</label><br>
+                    {{ form.Name }}
+                </div>
+                <div class="container col-md-6">
+                    <label for="field">Email:</label>
+                    {{ form.Email }}
+                </div>
+            </div>
+            <hr>
+            <div class="container row">
+                <div class="container col-md-12">
+                    <label for="field">Message:</label>
+                    {{ form.Message }}
+                </div>
+            </div>
+            <button class="btn btn-lg btn-outline-warning px-5 rounded float-right mt-3 mr-5" type="submit" > Send.. </button>
         </form>
     </div>
 {% endblock body %}

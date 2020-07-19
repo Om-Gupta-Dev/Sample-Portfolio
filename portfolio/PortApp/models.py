@@ -4,9 +4,7 @@ from django import forms
 # Create your models here.
 
 class contact(models.Model):
-    First_Name = models.CharField(max_length=15 )
-    Last_name = models.CharField(max_length=15 )
-    Username = models.CharField(max_length=30 )
+    Name = models.CharField(max_length=50 )
     Email = models.EmailField()
     Message = models.TextField() 
     

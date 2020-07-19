@@ -1,6 +1,37 @@
 {% extends "PortApp/base.html" %}
 
+{% load static %}
+
 {% block title %} About...  {% endblock title %}
 
 {% block body %}
+    <div class="container">
+        <h1>ABOUT ME </h1><hr class="HrAbout">
+        <p class="text-secondary font-weight-bold">INFORMATIONS ABOUT ME</p>
+        <div class="container row">
+            <div class="container col-md-4">
+                <img src={% static "images/about-me.jpeg" %} class="card-img mt-3" alt="...">
+            </div>
+            <div class="container col-md-8">
+                <div class="card-body">
+                <h2 class="card-title">I'M Om Gupta </h2>
+                <h4>A Lead <span style="color:orange"> Web-Developer </span> Based in <span style="color:orange"> INDIA </span></h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="container row mt-3">
+                    <div class="container col-md-6">
+                        <p> <strong> Birthday : </strong> 17th Sep 2002</p><hr>
+                        <p> <strong> Age : </strong>17</p><hr>
+                        <p> <strong> Residence : </strong> INDIA </p><hr>
+                        <p> <strong> Address : </strong> 404 Madhya Pradesh </p><hr>
+                    </div>
+                    <div class="container col-md-6">
+                        <p> <strong> E-mail : </strong> info@domain.com </p><hr>
+                        <p> <strong> Phone : </strong> +91 012-345-6789</p><hr>
+                        <p> <strong> Skype : </strong> skype.404 </p><hr>
+                        <p> <strong> Freelancer : </strong> Available </p><hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock body %}
