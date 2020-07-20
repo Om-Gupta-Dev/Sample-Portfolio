@@ -29,9 +29,7 @@ def contact(request):
         form = PortForm.contact(request.POST)
         if form.is_valid():
             print("\n\n\t Validatin succeed \t Printing User Data......")
-            print('' , form.cleaned_data['First_Name'])
-            print('' , form.cleaned_data['Last_name'])
-            print('' , form.cleaned_data['Username'])
+            print('' , form.cleaned_data['Name'])
             print('' , form.cleaned_data['Email'])
             print('' , form.cleaned_data['Message'])
             form.save(commit=True)

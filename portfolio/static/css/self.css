@@ -13,6 +13,8 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     color: whitesmoke;
+    height: 100%;
+    background-size: 100% 100%;
 }
 
 .white{
@@ -79,4 +81,13 @@ textarea[name="Message"] {
 
 textarea {
     resize: none;
+}
+
+.HrServices {
+    margin-left: auto;
+    width: 175px;
+    color: orange;
+    background-color: orange;
+    height: 3px;
+    border-radius: 2px;
 }
